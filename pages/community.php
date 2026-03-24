@@ -25,8 +25,8 @@
                 <ul>
                     <a href="landing-page.php" class="nav-link">Home</a>
                     <a href="packages.php" class="nav-link">Packages</a>
-                    <a href="#" class="nav-link active">Community</a>
-                    <a href="#" class="nav-link">About</a>
+                    <a href="community.php" class="nav-link active">Community</a>
+                    <a href="about.php" class="nav-link">About</a>
                 </ul>
             </div>
             <div class="signin-button">
@@ -37,7 +37,7 @@
   
     <!--Section-a-->
     <div class="section-a">
-        <div>
+        <div data-aos="fade-up" data-aos-duration="800">
             <h1>TAF Community Hub</h1>
             <p>Connect with other travelers, share your unforgettable experiences,<br>
             and find advice for your next adventure</p>
@@ -50,11 +50,11 @@
     <!--Section-b-->
     <div class="section-b">
         <div class="stories">
-            <h1 style="margin-bottom:80px;
+            <h1 data-aos="fade-right" data-aos-duration="800" data-aos-delay="200" style="margin-bottom:80px;
             font-size:50px;
             color:#CBC689;
             margin-left:50px">Traveler Stories</h1>
-            <div class="card-1">
+            <div data-aos="fade-left" data-aos-duration="800" data-aos-delay="400" class="card-1">
                 <div>
                     <img src="../assets/img/familys.png">
                 </div>
@@ -76,23 +76,23 @@
                 </div>
             </div>
 
-             <div style="margin-top:80px;
+             <div data-aos="fade-right" data-aos-duration="800" data-aos-delay="600" style="margin-top:80px;
              margin-right:80px;" class="card-2">
                 <div style="position:absolute;
                 right:210px;
                 top:20px">
                     <h1 style="font-size:25px;
                     color:#ffff">Marrakech Hidden<br>
-                    Gems: Mike’s Tale.</h1>
+                    Gems: Mike's Tale.</h1>
                     <p style="color:#ffff;
                     margin-top:10px;
                     font-size:20px;
                     margin-bottom:20px;">Happy traveler and avid traveler.<br> 
                     Happy Sarah explores canyons and<br>
                     soaring canyons, ascending to the<br>
-                    canyon world that’s about minutes<br>
+                    canyon world that's about minutes<br>
                     away, for a joyful experience. </p>
-                    <a>Read Full Story</a>
+                   
 
                     <div>
                         <img src="../assets/img/familys.png">
@@ -106,8 +106,18 @@
 
         <div class="photos">
             <div>
-                <h1>Travel Photos</h1>
-                <img src="../assets/img/explore-group.png">
+                <h1 data-aos="fade-left" data-aos-duration="800" data-aos-delay="800" style="font-size:50px;
+            color:#CBC689;
+            margin-left:50px;
+            position:absolute;
+            top:500px;">Travel Photos</h1>
+                <img data-aos="fade-up" data-aos-duration="800" data-aos-delay="1000" style="position:relative;
+                margin-top:30px" src="../assets/img/explore-group.png">
+                <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="1200" class="sign-up-contribute-container">
+                    <span>Sign Up to<br>
+                    Contribute</span>
+                    <a>Sign Up Contribute</a>
+                </div>
             </div>
         </div>
 
@@ -115,30 +125,70 @@
         
         <div class="tips">
             <div>
-                <h1>Travel Tips</h1>
-                <img src="../assets/img/explore-group.png">
+                <h1 data-aos="fade-right" data-aos-duration="800" data-aos-delay="1400" style="font-size:50px;
+            color:#CBC689;
+            margin-left:50px;
+            position:absolute;
+            top:500px;">Travel Tips</h1>
+                <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="1600" class="compass">
+                    <div style="display:flex;">
+                        <div>
+                            <img style="position:absolute;
+                            position:relative;
+                            top:10px;" src="../assets/img/compass.png">
+                        </div>
+                        <div>
+                            <h1>Packing Hacks: Efficient travel</h1>
+                            <p>User tip: also compass and it can help<br> 
+                                with your unforgettable footaging...
+                            </p>
+                        </div>
+                    </div>
+                    <div class="user-icon">
+                        <img src="../assets/img/user-icon.png">
+                        <span>User Tip</span>
+                    </div>
+                </div>
+
+                <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="1800" class="camera">
+                    <div style="display:flex;">
+                        <div>
+                            <img style="position:absolute;
+                            position:relative;
+                            top:10px;" src="../assets/img/camera.png">
+                        </div>
+                        <div>
+                            <h1>Packing Hacks: Efficient travel</h1>
+                            <p>User tip: also compass and it can help<br> 
+                                with your unforgettable footaging...
+                            </p>
+                        </div>
+                    </div>
+                    <div class="user-icon">
+                        <img src="../assets/img/user-icon.png">
+                        <span>User Advice</span>
+                    </div>
+                </div>
+
+                 <div data-aos="fade-up" data-aos-duration="800" data-aos-delay="2000" class="tag-filled">
+                    <div style="display:flex;">
+                        <div>
+                            <img style="position:absolute;
+                            position:relative;
+                            top:10px;" src="../assets/img/tag-filled.png">
+                        </div>
+                        <div>
+                            <h1>Packing Hacks: Efficient travel</h1>
+                            <p>User tip: also compass and it can help<br> 
+                                with your unforgettable footaging...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <!-- Login Modal -->
     <div id="loginModal" class="login-modal">

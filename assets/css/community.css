@@ -8,7 +8,7 @@ body {
   font-family: 'Open Sans', Arial, sans-serif;
   background: #29432A;
   color: #333;
-  height:1000000px;
+  height:auto;
 }
 
 
@@ -16,7 +16,7 @@ body {
   background-image: url("../img/background-landing-page.png");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 1500px; 
+  height: 1400px; 
   width: 100%;
 }
 
@@ -235,17 +235,147 @@ ul a.active {
 }
 
 .photos{
- 
   padding:50px;
+
 }
 
+.sign-up-contribute-container{
+  background:#2D462B;
+  border:#EFA654 solid 2px;
+  padding:30px;
+  border-radius:15px;
+  position:relative;
+  margin-top:50px;
+}
 
+.sign-up-contribute-container span{
+  color:#D9D095;
+  font-weight:bold;
+  font-size:30px;
+}
+
+.sign-up-contribute-container a{
+  color:#D9D095;
+  border:#EFA654 solid 2px;
+  font-size:20px;
+  padding:20px;
+  border-radius:35px;
+  margin-bottom:20px;
+  position:absolute;
+  top:30px;
+  right:35px;
+}
 
 
 .tips{
- 
   padding:50px;
+
 }
+
+.compass{
+  background:#15290D;
+  position:relative;
+  width:100%;
+  max-width:500px;
+  padding:10px;
+  border-radius:15px;
+  margin-top:80px;
+  
+
+}
+
+.compass h1,
+.compass p{
+  display:inline-block;
+  color:#ffff;
+ 
+}
+
+.compass h1{
+  font-size:25px;
+
+}
+
+.compass p{
+  font-size:20px;
+  margin-top:10px;
+}
+
+.user-icon{
+  display:flex;
+  align-items:center;
+}
+
+.user-icon img{
+  margin-right:15px;
+  margin-left:90px;
+
+}
+
+.user-icon span{
+  color:#EFA654;
+  font-weight:bold;
+}
+
+.camera{
+  background:#15290D;
+  position:relative;
+  width:100%;
+  max-width:500px;
+  padding:10px;
+  border-radius:15px;
+  margin-top:40px;
+  
+
+}
+
+.camera h1,
+.camera p{
+  display:inline-block;
+  color:#ffff;
+ 
+}
+
+.camera h1{
+  font-size:25px;
+
+}
+
+.camera p{
+  font-size:20px;
+  margin-top:10px;
+}
+
+.tag-filled{
+  background:#15290D;
+  position:relative;
+  width:100%;
+  max-width:500px;
+  padding:20px;
+  border-radius:15px;
+  margin-top:40px;
+  
+
+}
+
+.tag-filled h1,
+.tag-filled p{
+  display:inline-block;
+  color:#ffff;
+ 
+}
+
+.tag-filled h1{
+  font-size:25px;
+
+}
+
+.tag-filled p{
+  font-size:20px;
+  margin-top:10px;
+}
+
+
 /*sectio-b*/
 
 

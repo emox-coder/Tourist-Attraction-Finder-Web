@@ -1,0 +1,50 @@
+.our-story-container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows:auto;
+    margin-top:80px;
+    height:550px;
+   
+
+}
+
+.our-story-container h1{
+  background: linear-gradient(
+    90deg,
+    #C6C39D 17%,
+    #29432A 35%,
+    #8D863B 35%,
+    #B4AF7D 57%,
+    #FFFFFF 100%
+  );
+  -webkit-background-clip: text;   
+  -webkit-text-fill-color: transparent; 
+  background-clip: text;          
+  color: transparent; 
+  font-size:90px;
+  font-weight:bolder;   
+   color: white; 
+  -webkit-text-stroke: 2px #29432A;
+  margin-top:60px;
+
+}
+
+.our-story-container h3{
+    font-size:40px;
+    color:#F2C94C;
+    margin-top:20px;
+    margin-bottom:25px;
+}
+
+.our-story-container p{
+    color:#fff;
+    font-size:30px;
+}
+
+.logo-ver2-container {
+    position:relative;
+
+}
+.logo-ver2-container img{
+    width:100%;
+}

@@ -25,7 +25,7 @@
                     <a href="landing-page.php" class="nav-link">Home</a>
                     <a href="packages.php" class="nav-link active">Packages</a>
                     <a href="community.php" class="nav-link">Community</a>
-                    <a href="#" class="nav-link">About</a>
+                    <a href="about.php" class="nav-link">About</a>
                 </ul>
             </div>
             <div class="signin-button">

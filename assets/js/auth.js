@@ -87,11 +87,11 @@ class AuthManager {
                 this.showMessage('success', result.message);
                 this.updateUI(true);
                 
-                // Close modal and update UI
+                // Close modal and redirect to dashboard
                 setTimeout(() => {
                     document.getElementById('loginModal').style.display = 'none';
                     document.body.style.overflow = 'auto';
-                    this.showWelcomeMessage();
+                    window.location.href = 'dashboard.php';
                 }, 1500);
             } else {
                 this.showMessage('error', result.message);
@@ -119,8 +119,13 @@ class AuthManager {
             
             if (result.success) {
                 this.currentUser = null;
-                this.showMessage('success', result.message);
                 this.updateUI(false);
+                
+                // Show logout message and redirect immediately
+                this.showMessage('success', result.message);
+                setTimeout(() => {
+                    window.location.href = 'landing-page.php';
+                }, 500);
             }
             
             return result;

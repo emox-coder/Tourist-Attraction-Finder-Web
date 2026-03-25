@@ -27,63 +27,54 @@ $user = [
     </head>
 <body>
     <div class="left-navigator">
-        <h1>Sample Dashboard</h1>
-        
-        <!-- Profile Section -->
-        <div class="profile-section">
-            <div class="profile-info">
-                <img src="../assets/img/user-icon.png" alt="Profile" class="profile-avatar">
-                <div class="user-details">
-                    <h3><?php echo htmlspecialchars($user['fullname']); ?></h3>
-                    <p><?php echo htmlspecialchars($user['email']); ?></p>
-                </div>
+        <div class="navbar">
+            <div>
+                <img src="../assets/img/navbar-icon.png">
+                <span>TAF NAVBAR</span>
             </div>
         </div>
-        
-        <!-- Logout Button -->
-        <div class="logout-section">
-            <button class="logout-btn" onclick="handleLogout()">
-                <i class="fas fa-sign-out-alt"></i>
-                <span>Logout</span>
-            </button>
-        </div>
-    </div>
 
-    <!-- Scripts -->
-    <script src="../assets/js/auth.js"></script>
-    <script>
-        // Direct logout function
-        function handleLogout() {
-            if (confirm('Are you sure you want to logout?')) {
-                // Direct API call for logout
-                fetch('../api/auth.php', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify({ action: 'logout' })
-                })
-                .then(response => response.json())
-                .then(result => {
-                    if (result.success) {
-                        // Show success message and redirect
-                        alert('Logged out successfully!');
-                        window.location.href = 'landing-page.php';
-                    } else {
-                        alert('Logout failed');
-                    }
-                })
-                .catch(error => {
-                    console.error('Logout error:', error);
-                    alert('Logout error');
-                });
-            }
-        }
-        
-        // Fallback function
-        function logout() {
-            handleLogout();
-        }
-    </script>
+        <div class="left-buttons">
+            <div>
+                <a>Search Spots</a>
+                <img src="../assets/img/arrow-down.png">
+            </div>
+        </div>
+
+        <div class="left-buttons">
+            <div>
+                <a>View Spots Details</a>
+                <img src="../assets/img/arrow-down.png">
+            </div>
+        </div>
+
+        <div class="left-buttons">
+            <div>
+                <a>Pinned</a>
+            </div>
+        </div>
+
+        <div class="left-buttons">
+            <div>
+                <a>Ratings</a>
+            </div>
+        </div>
+
+        <div class="left-buttons">
+            <div>
+                <a>Recommendation</a>
+            </div>
+        </div>
+
+        <div>
+            <a>SETTINGS</a>
+        </div>
+
+        <div>
+            <a>Log out</a>
+        </div>
+       
+    </div>
+  
 </body>    
 </html>

@@ -1,18 +1,17 @@
 class AuthManager {
     constructor() {
-        this.apiBase = '../api/auth.php';
+        this.apiBase = '../api/auth';
         this.currentUser = null;
         this.checkAuthStatus();
     }
 
     async checkAuthStatus() {
         try {
-            const response = await fetch(this.apiBase, {
-                method: 'POST',
+            const response = await fetch(`${this.apiBase}/check`, {
+                method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({ action: 'check' })
+                }
             });
             
             const result = await response.json();
@@ -30,7 +29,7 @@ class AuthManager {
 
     async register(formData) {
         try {
-            const response = await fetch(this.apiBase, {
+            const response = await fetch(`${this.apiBase}/register`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -68,7 +67,7 @@ class AuthManager {
 
     async login(formData) {
         try {
-            const response = await fetch(this.apiBase, {
+            const response = await fetch(`${this.apiBase}/login`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -107,12 +106,11 @@ class AuthManager {
 
     async logout() {
         try {
-            const response = await fetch(this.apiBase, {
+            const response = await fetch(`${this.apiBase}/logout`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({ action: 'logout' })
+                }
             });
 
             const result = await response.json();

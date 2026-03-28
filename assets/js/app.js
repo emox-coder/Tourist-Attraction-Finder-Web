@@ -1,6 +1,6 @@
 
 // Fetch top destinations cards
-fetch('../api/TopDestinationAPI.php')
+fetch('../api/top-destinations')
   .then(res => res.json())
   .then(cards => {
     const container1 = document.getElementById('top-destinations-cards');
@@ -16,7 +16,7 @@ fetch('../api/TopDestinationAPI.php')
 .catch(err => console.error('Error loading top destinations:', err));
 
 // Fetch three cards
-fetch('../api/ThreeCardsAPI.php')
+fetch('../api/three-cards')
   .then(res => res.json())
   .then(cards => {
     const container2 = document.getElementById('three-cards');

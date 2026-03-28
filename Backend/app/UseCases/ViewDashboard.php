@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 require_once __DIR__ . "/../../Infrastructure/Database/Database.php";
 
 class ViewDashboard {
@@ -6,7 +6,7 @@ class ViewDashboard {
         $conn = (new Database())->connect();
 
         return [
-            "users" => $conn->query("SELECT COUNT(*) FROM users")->fetchColumn(),
+            "admin_management" => $conn->query("SELECT COUNT(*) FROM admin_management")->fetchColumn(),
             "attractions" => $conn->query("SELECT COUNT(*) FROM attractions")->fetchColumn()
         ];
     }

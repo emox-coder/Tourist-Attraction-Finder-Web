@@ -1,5 +1,5 @@
-﻿<?php
-class User {
+<?php
+class AdminManagement {
     public $id;
     public $name;
     public $email;

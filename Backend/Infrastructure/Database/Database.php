@@ -1,21 +1,14 @@
-﻿<?php
+<?php
+
+require_once __DIR__ . "/PDOConnection.php";
+
 class Database {
     private $conn;
 
     public function connect() {
-        $config = require __DIR__ . "/../../config/config.php";
-
-        try {
-            $this->conn = new PDO(
-                "mysql:host={$config['db']['host']};dbname={$config['db']['dbname']}",
-                $config['db']['user'],
-                $config['db']['pass']
-            );
-            $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        } catch (Exception $e) {
-            die("DB Error: " . $e->getMessage());
-        }
-
+        if ($this->conn === null) {
+            $this->conn = (new PDOConnection())->connect();
+            }
         return $this->conn;
     }
 }

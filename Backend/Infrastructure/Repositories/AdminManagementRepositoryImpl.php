@@ -1,7 +1,7 @@
-﻿<?php
+<?php
 require_once __DIR__ . "/../../Infrastructure/Database/Database.php";
 
-class UserRepositoryImpl implements UserRepository {
+class AdminManagementRepositoryImpl implements AdminManagementRepository {
     private $conn;
 
     public function __construct() {
@@ -9,7 +9,7 @@ class UserRepositoryImpl implements UserRepository {
     }
 
     public function getAll() {
-        $stmt = $this->conn->query("SELECT id, name, email FROM users");
+        $stmt = $this->conn->query("SELECT id, name, email FROM admin_management");
         return $stmt->fetchAll(PDO::FETCH_ASSOC);
     }
 }

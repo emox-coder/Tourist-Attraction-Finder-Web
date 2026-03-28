@@ -23,9 +23,9 @@
             </div>
             <div class="search-home-container">
                 <ul>
-                    <a href="landing-page.html" class="nav-link active">Home</a>
-                    <a href="packages.html" class="nav-link">Packages</a>
-                    <a href="community.html" class="nav-link">Community</a>
+                    <a href="landing-page.php" class="nav-link active">Home</a>
+                    <a href="packages.php" class="nav-link">Packages</a>
+                    <a href="community.php" class="nav-link">Community</a>
                     <a href="#" class="nav-link">About</a>
                 </ul>
             </div>
@@ -176,7 +176,7 @@
 
                 <div class="options">
                     <label><input type="checkbox" name="remember"> Remember Me</label>
-                    <a href="../pages/forgot-password.html">Forgot Password?</a>
+                    <a href="../pages/forgot-password.php">Forgot Password?</a>
                 </div>
 
                 <button type="submit" class="login-btn">Sign in</button>

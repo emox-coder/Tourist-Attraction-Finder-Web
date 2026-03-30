@@ -1,15 +1,3 @@
-<?php
-session_start();
-if (!isset($_SESSION['user_id'])) {
-    header('Location: landing-page.php');
-    exit();
-}
-
-$user = [
-    'fullname' => $_SESSION['user_name'] ?? 'User',
-    'email' => $_SESSION['user_email'] ?? 'user@example.com'
-];
-?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -23,58 +11,155 @@ $user = [
         <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=bookmark" />
          
     </head>
-<body>
-    <div class="left-navigator">
-        <div class="navbar">
-            <div>
+    <body>
+        <nav>
+            <div class="logo-navbar">
                 <img src="../assets/img/navbar-icon.png">
-                <span>TAF NAVBAR</span>
+                <h1>TAF NAVBAR</h1>
+            </div>               
+            <div class="nav-wrap">
+                <div>
+                    <a>Search Sports</a>
+                    <img src="../assets/img/arrow-down.png">
+                </div>
+
+                <div>
+                    <a>View Spots Details</a>
+                    <img src="../assets/img/arrow-down.png">
+                </div>
+
+                <div>
+                    <a>Pinned</a>
+                </div>
+
+                <div>
+                    <a>Ratings</a>
+                </div>
             </div>
-        </div>
+            <div class="nav-wrap2">
+                <div>
+                    <a>SETTINGS</a>
+                </div>
 
-        <div class="left-buttons">
-            <div>
-                <a>Search Spots</a>
-                <img src="../assets/img/arrow-down.png">
+                <div>
+                    <a  style="text-decoration: none;
+                    color:#F2C94C;" href="landing-page.php">Back Home</a>
+                </div>
             </div>
-        </div>
+        </nav>
+        <div class="container">
+            <header>
+                <div class="logo-img">
+                    <img src="../assets/img/logo.png">
+                </div>
+                <div class="search-bar">
+                    <div class="search-wrap">
+                        <span class="material-icons">search</span>
+                        <input type="search" placeholder="Search for tourist attractions...">
+                        <button>Search</button>
+                    </div>
+                </div>
+                <div class="categories">
+                    <a class="categ-a">All Categories</a>
+                    <a class="reco-a">Recommendations</a>
+                </div>
+            </header>
 
-        <div class="left-buttons">
-            <div>
-                <a>View Spots Details</a>
-                <img src="../assets/img/arrow-down.png">
-            </div>
+            <content>
+                <div class="cards-container">
+                    <div class="cards">
+                        <div>
+                            <img src="../assets/img/katipunan.png">
+                        </div>
+                        <h2>Recommended</h2>
+                        <span class="material-symbols-outlined">bookmark</span>
+                        <div class="card-info">
+                            <h1>Katipunan:</h1>
+                            <h1>Mount Dabiak</h1>
+                        </div>
+                    </div>
+                     <div class="cards">
+                        <div>
+                            <img src="../assets/img/katipunan.png">
+                        </div>
+                        <h2>Recommended</h2>
+                        <span class="material-symbols-outlined">bookmark</span>
+                        <div class="card-info">
+                            <h1>Katipunan:</h1>
+                            <h1>Mount Dabiak</h1>
+                        </div>
+                    </div>
+                      <div class="cards">
+                        <div>
+                            <img src="../assets/img/katipunan.png">
+                        </div>
+                        <h2>Recommended</h2>
+                        <span class="material-symbols-outlined">bookmark</span>
+                        <div class="card-info">
+                            <h1>Katipunan:</h1>
+                            <h1>Mount Dabiak</h1>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div>
+                            <img src="../assets/img/katipunan.png">
+                        </div>
+                        <h2>Recommended</h2>
+                        <span class="material-symbols-outlined">bookmark</span>
+                        <div class="card-info">
+                            <h1>Katipunan:</h1>
+                            <h1>Mount Dabiak</h1>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div>
+                            <img src="../assets/img/katipunan.png">
+                        </div>
+                        <h2>Recommended</h2>
+                        <span class="material-symbols-outlined">bookmark</span>
+                        <div class="card-info">
+                            <h1>Katipunan:</h1>
+                            <h1>Mount Dabiak</h1>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div>
+                            <img src="../assets/img/katipunan.png">
+                        </div>
+                        <h2>Recommended</h2>
+                        <span class="material-symbols-outlined">bookmark</span>
+                        <div class="card-info">
+                            <h1>Katipunan:</h1>
+                            <h1>Mount Dabiak</h1>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div>
+                            <img src="../assets/img/katipunan.png">
+                        </div>
+                        <h2>Recommended</h2>
+                        <span class="material-symbols-outlined">bookmark</span>
+                        <div class="card-info">
+                            <h1>Katipunan:</h1>
+                            <h1>Mount Dabiak</h1>
+                        </div>
+                    </div>
+                    <div class="cards">
+                        <div>
+                            <img src="../assets/img/katipunan.png">
+                        </div>
+                        <h2>Recommended</h2>
+                        <span class="material-symbols-outlined">bookmark</span>
+                        <div class="card-info">
+                            <h1>Katipunan:</h1>
+                            <h1>Mount Dabiak</h1>
+                        </div>
+                    </div>
+                </div>
+            </content>
         </div>
-
-        <div class="left-buttons">
-            <div>
-                <a>Pinned</a>
-            </div>
-        </div>
-
-        <div class="left-buttons">
-            <div>
-                <a>Ratings</a>
-            </div>
-        </div>
-
-        <div class="left-buttons">
-            <div>
-                <a>Recommendation</a>
-            </div>
-        </div>
-
-        <div>
-            <a>SETTINGS</a>
-        </div>
-
-        <div>
-            <a>Log out</a>
-        </div>
-       
-    </div>
-  
-</body>    
+    </body>    
 </html>

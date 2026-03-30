@@ -2,7 +2,7 @@
 return [
     "db" => [
         "host" => "localhost",
-        "dbname" => "tourist_finder",
+        "dbname" => "taf",
         "user" => "root",
         "pass" => ""
     ]

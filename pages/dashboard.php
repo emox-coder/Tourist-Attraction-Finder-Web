@@ -69,97 +69,9 @@
             </header>
 
             <content>
-                <div class="cards-container">
-                    <div class="cards">
-                        <div>
-                            <img src="../assets/img/katipunan.png">
-                        </div>
-                        <h2>Recommended</h2>
-                        <span class="material-symbols-outlined">bookmark</span>
-                        <div class="card-info">
-                            <h1>Katipunan:</h1>
-                            <h1>Mount Dabiak</h1>
-                        </div>
-                    </div>
-                     <div class="cards">
-                        <div>
-                            <img src="../assets/img/katipunan.png">
-                        </div>
-                        <h2>Recommended</h2>
-                        <span class="material-symbols-outlined">bookmark</span>
-                        <div class="card-info">
-                            <h1>Katipunan:</h1>
-                            <h1>Mount Dabiak</h1>
-                        </div>
-                    </div>
-                      <div class="cards">
-                        <div>
-                            <img src="../assets/img/katipunan.png">
-                        </div>
-                        <h2>Recommended</h2>
-                        <span class="material-symbols-outlined">bookmark</span>
-                        <div class="card-info">
-                            <h1>Katipunan:</h1>
-                            <h1>Mount Dabiak</h1>
-                        </div>
-                    </div>
-                    <div class="cards">
-                        <div>
-                            <img src="../assets/img/katipunan.png">
-                        </div>
-                        <h2>Recommended</h2>
-                        <span class="material-symbols-outlined">bookmark</span>
-                        <div class="card-info">
-                            <h1>Katipunan:</h1>
-                            <h1>Mount Dabiak</h1>
-                        </div>
-                    </div>
-                    <div class="cards">
-                        <div>
-                            <img src="../assets/img/katipunan.png">
-                        </div>
-                        <h2>Recommended</h2>
-                        <span class="material-symbols-outlined">bookmark</span>
-                        <div class="card-info">
-                            <h1>Katipunan:</h1>
-                            <h1>Mount Dabiak</h1>
-                        </div>
-                    </div>
-                    <div class="cards">
-                        <div>
-                            <img src="../assets/img/katipunan.png">
-                        </div>
-                        <h2>Recommended</h2>
-                        <span class="material-symbols-outlined">bookmark</span>
-                        <div class="card-info">
-                            <h1>Katipunan:</h1>
-                            <h1>Mount Dabiak</h1>
-                        </div>
-                    </div>
-                    <div class="cards">
-                        <div>
-                            <img src="../assets/img/katipunan.png">
-                        </div>
-                        <h2>Recommended</h2>
-                        <span class="material-symbols-outlined">bookmark</span>
-                        <div class="card-info">
-                            <h1>Katipunan:</h1>
-                            <h1>Mount Dabiak</h1>
-                        </div>
-                    </div>
-                    <div class="cards">
-                        <div>
-                            <img src="../assets/img/katipunan.png">
-                        </div>
-                        <h2>Recommended</h2>
-                        <span class="material-symbols-outlined">bookmark</span>
-                        <div class="card-info">
-                            <h1>Katipunan:</h1>
-                            <h1>Mount Dabiak</h1>
-                        </div>
-                    </div>
-                </div>
+                <div id="cards "class="cards-container"> </div>
             </content>
         </div>
+        <script src="../assets/js/app.js"></script>
     </body>    
 </html>

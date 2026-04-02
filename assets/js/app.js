@@ -28,3 +28,28 @@ fetch('../api/three-cards')
   })
 .catch(err => console.error('Error loading three cards:', err));
 
+//all cards
+fetch('../api/cards')
+  .then(res => res.json())
+  .then(cards => {
+    const container3 = document.getElementById('cards');
+    if (container3) {
+      container3.innerHTML = cards.map(card => `
+        <div class="cards">
+          <div>
+            <img src="../${card.image_url}" alt="${card.name}">
+          </div>
+
+          ${card.recommended ? '<h2>Recommended</h2>' : ''}
+
+          <span class="material-symbols-outlined">bookmark</span>
+
+          <div class="card-info">
+            <h1>${card.location}:</h1>
+            <h1>${card.name}</h1>
+          </div>
+        </div>
+      `).join('');
+    }
+  })
+  .catch(err => console.error('Error loading all cards:', err));

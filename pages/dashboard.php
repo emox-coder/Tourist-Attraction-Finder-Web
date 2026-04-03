@@ -16,62 +16,147 @@
     </head>
     <body>
         <nav>
-            <div class="logo-navbar">
-                <img src="../assets/img/navbar-icon.png">
-                <h1>TAF NAVBAR</h1>
-            </div>               
-            <div class="nav-wrap">
-                <div>
-                    <a>Search Sports</a>
-                    <img src="../assets/img/arrow-down.png">
-                </div>
-
-                <div>
-                    <a>View Spots Details</a>
-                    <img src="../assets/img/arrow-down.png">
-                </div>
-
-                <div>
-                    <a>Pinned</a>
-                </div>
-
-                <div>
-                    <a>Ratings</a>
-                </div>
+            <div class="logo">
+                <img src="../assets/img/logo.png">
             </div>
-            <div class="nav-wrap2">
-                <div>
-                    <a>SETTINGS</a>
-                </div>
 
-                <div>
-                    <a  style="text-decoration: none;
-                    color:#F2C94C;" href="landing-page.php">Back Home</a>
-                </div>
+            <div class="div1">
+                <a>All Categories</a>
+                <a>Pinned</a>
+            </div>
+
+            <div class="div2">
+                <a>#</a>
+                <a>#</a>
+            </div>
+
+            <div class="back-home">
+                <a href="../pages/landing-page.php">
+                    <span class="material-icons">home</span>
+                    Back Home
+                </a>
             </div>
         </nav>
-        <div class="container">
+
+        <div class="dashboard-container">
             <header>
-                <div class="logo-img">
-                    <img src="../assets/img/logo.png">
-                </div>
-                <div class="search-bar">
-                    <div class="search-wrap">
-                        <span class="material-icons">search</span>
-                        <input type="search" placeholder="Search for tourist attractions...">
-                        <button>Search</button>
-                    </div>
-                </div>
-                <div class="categories">
-                    <a class="categ-a">All Categories</a>
-                    <a class="reco-a">Recommendations</a>
+                <div class="search-container">
+                    <span class="material-icons">search</span>
+                    <input type="search" placeholder="Search for attractions...">
+                    <button type="submit">Search</button>
                 </div>
             </header>
 
             <content>
-                <div id="cards "class="cards-container"> </div>
+                <div class="content-container">
+                    <div class="card">
+                        <img src="../assets/img/sample.webp">
+                        <div class="card-content">
+                            <h3>Dapitan River Cruise</h3>
+                            <hr>
+                            <p>Dapitan City</p>
+                        </div>
+
+                        <div class="card-actions">
+                            <a class="view-details" href="#">View Details</a>
+                            <div class="save-action" >
+                                <span class="material-icons">bookmark</span>
+                                <a href="#">save</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <div class="content-container">
+                    <div class="card">
+                        <img src="../assets/img/sample.webp">
+                        <div class="card-content">
+                            <h3>Dapitan River Cruise</h3>
+                            <hr>
+                            <p>Dapitan City</p>
+                        </div>
+
+                        <div class="card-actions">
+                            <a class="view-details" href="#">View Details</a>
+                            <div class="save-action" >
+                                <span class="material-icons">bookmark</span>
+                                <a href="#">save</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <div class="content-container">
+                    <div class="card">
+                        <img src="../assets/img/sample.webp">
+                        <div class="card-content">
+                            <h3>Dapitan River Cruise</h3>
+                            <hr>
+                            <p>Dapitan City</p>
+                        </div>
+
+                        <div class="card-actions">
+                            <a class="view-details" href="#">View Details</a>
+                            <div class="save-action" >
+                                <span class="material-icons">bookmark</span>
+                                <a href="#">save</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <div class="content-container">
+                    <div class="card">
+                        <img src="../assets/img/sample.webp">
+                        <div class="card-content">
+                            <h3>Dapitan River Cruise</h3>
+                            <hr>
+                            <p>Dapitan City</p>
+                        </div>
+
+                        <div class="card-actions">
+                            <a class="view-details" href="#">View Details</a>
+                            <div class="save-action" >
+                                <span class="material-icons">bookmark</span>
+                                <a href="#">save</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <div class="content-container">
+                    <div class="card">
+                        <img src="../assets/img/sample.webp">
+                        <div class="card-content">
+                            <h3>Dapitan River Cruise</h3>
+                            <hr>
+                            <p>Dapitan City</p>
+                        </div>
+
+                        <div class="card-actions">
+                            <a class="view-details" href="#">View Details</a>
+                            <div class="save-action" >
+                                <span class="material-icons">bookmark</span>
+                                <a href="#">save</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <div class="content-container">
+                    <div class="card">
+                        <img src="../assets/img/sample.webp">
+                        <div class="card-content">
+                            <h3>Dapitan River Cruise</h3>
+                            <hr>
+                            <p>Dapitan City</p>
+                        </div>
+
+                        <div class="card-actions">
+                            <a class="view-details" href="#">View Details</a>
+                            <div class="save-action" >
+                                <span class="material-icons">bookmark</span>
+                                <a href="#">save</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </content>
         </div>
-        <script src="../assets/js/app.js"></script>
     </body>    
 </html>

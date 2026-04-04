@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Debug Save Process</title>
+</head>
+<body>
+    <h2>Debug Attraction Save</h2>
+    <form id="debugForm">
+        <input type="hidden" id="currentImage" name="currentImage" value="">
+        <input type="text" name="name" placeholder="Name" value="Test Attraction">
+        <input type="text" name="location" placeholder="Location" value="Test Location">
+        <select name="category">
+            <option value="city">City</option>
+            <option value="municipality">Municipality</option>
+        </select>
+        <input type="number" name="displayOrder" value="0">
+        <button type="submit">Save Debug</button>
+    </form>
+    
+    <h3>Set Image Path:</h3>
+    <input type="text" id="imagePath" placeholder="assets/img/destinations/test.png">
+    <button onclick="setImage()">Set Image Path</button>
+    
+    <div id="result"></div>
+
+    <script>
+        function setImage() {
+            const path = document.getElementById('imagePath').value;
+            document.getElementById('currentImage').value = path;
+            document.getElementById('result').innerHTML = `Image path set to: ${path}`;
+        }
+
+        document.getElementById('debugForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(e.target);
+            const data = {
+                name: formData.get('name'),
+                location: formData.get('location'),
+                category: formData.get('category'),
+                description: formData.get('description') || '',
+                display_order: parseInt(formData.get('displayOrder')),
+                is_top_destination: 1,
+                image_url: formData.get('currentImage')
+            };
+
+            document.getElementById('result').innerHTML = `
+                <h3>Data being sent:</h3>
+                <pre>${JSON.stringify(data, null, 2)}</pre>
+            `;
+
+            try {
+                const response = await fetch('admin/Backend/routes/api.php?uri=/api/admin/attractions', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(data)
+                });
+
+                const text = await response.text();
+                const cleanText = text.replace(/^\uFEFF/, '').trim();
+                const result = JSON.parse(cleanText);
+
+                document.getElementById('result').innerHTML += `
+                    <h3>Server Response:</h3>
+                    <pre>${JSON.stringify(result, null, 2)}</pre>
+                `;
+            } catch (error) {
+                document.getElementById('result').innerHTML += `
+                    <h3>Error:</h3>
+                    <p>${error.message}</p>
+                    <h3>Raw Response:</h3>
+                    <pre>${text}</pre>
+                `;
+            }
+        });
+    </script>
+</body>
+</html>

@@ -59,8 +59,9 @@
         </div>
         <div data-aos="fade-up" data-aos-duration="600" data-aos-delay="500" class="button-cities-municipalities">
             <div>
-                <a class="cities">Cities</a>
-                <a class="municipalities">Municipalities</a>
+                <a class="category-btn active" data-category="all">All</a>
+                <a class="category-btn" data-category="cities">Cities</a>
+                <a class="category-btn" data-category="municipalities">Municipalities</a>
             </div>
         </div>
     </div>

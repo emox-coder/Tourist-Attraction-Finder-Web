@@ -1,0 +1,53 @@
+name: Run Tests
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    
+    services:
+      mysql:
+        image: mysql:5.7
+        env:
+          MYSQL_ROOT_PASSWORD: password
+          MYSQL_DATABASE: tourist_finder_db
+        options: --health-cmd="mysqladmin ping" --health-interval=10s --health-timeout=5s --health-retries=3
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+    
+    - name: Setup PHP
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: '7.4'
+        extensions: pdo_mysql
+        tools: composer:v2
+    
+    - name: Install Composer dependencies
+      run: composer install --no-progress --prefer-dist --optimize-autoloader
+    
+    - name: Setup test database
+      run: |
+        mysql -h 127.0.0.1 -u root -ppassword tourist_finder_db < Backend/database_schema.sql
+        mysql -h 127.0.0.1 -u root -ppassword tourist_finder_db < Backend/database_three_cards.sql
+    
+    - name: Run PHP tests
+      run: php run-tests.php
+      env:
+        DB_HOST: 127.0.0.1
+        DB_DATABASE: tourist_finder_db
+        DB_USERNAME: root
+        DB_PASSWORD: password
+    
+    - name: Upload test results
+      uses: actions/upload-artifact@v3
+      if: always()
+      with:
+        name: test-results
+        path: tests/results/

@@ -1,5 +1,5 @@
 -- Database updates for Top Destinations management
-USE tourist_finder;
+USE tourist_finder_db;
 
 -- Add image_url column if not exists
 ALTER TABLE `attractions` 

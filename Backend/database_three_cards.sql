@@ -1,4 +1,6 @@
 -- Create three_cards table
+USE tourist_finder_db;
+
 CREATE TABLE IF NOT EXISTS three_cards (
     id INT AUTO_INCREMENT PRIMARY KEY,
     title VARCHAR(255) NOT NULL,

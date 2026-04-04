@@ -1,5 +1,5 @@
-CREATE DATABASE IF NOT EXISTS tourist_finder;
-USE tourist_finder;
+CREATE DATABASE IF NOT EXISTS tourist_finder_db;
+USE tourist_finder_db;
 
 -- --------------------------------------------------------
 

@@ -3,7 +3,7 @@
         'name' => 'taf/tourist-attraction-finder',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'f7915c168818ab149c98c3e4d4a407a26f853bca',
+        'reference' => 'e24a779f1502ca26c3bfe2b60afb8eab8775a314',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -11,9 +11,9 @@
     ),
     'versions' => array(
         'doctrine/instantiator' => array(
-            'pretty_version' => '2.0.0',
-            'version' => '2.0.0.0',
-            'reference' => 'c6222283fa3f4ac679f8b9ced9a4e23f163e80d0',
+            'pretty_version' => '1.5.0',
+            'version' => '1.5.0.0',
+            'reference' => '0a0fa9780f5d4e507415a065172d26a98d02047b',
             'type' => 'library',
             'install_path' => __DIR__ . '/../doctrine/instantiator',
             'aliases' => array(),
@@ -256,7 +256,7 @@
         'taf/tourist-attraction-finder' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'f7915c168818ab149c98c3e4d4a407a26f853bca',
+            'reference' => 'e24a779f1502ca26c3bfe2b60afb8eab8775a314',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
